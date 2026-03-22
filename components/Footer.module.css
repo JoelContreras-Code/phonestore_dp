@@ -1,0 +1,58 @@
+.footer {
+  background: var(--navy);
+  color: var(--gray-light);
+  margin-top: 48px;
+}
+
+.inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 48px 24px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.brand .logo {
+  font-size: 1.3rem;
+  color: var(--white);
+  display: block;
+  margin-bottom: 12px;
+}
+.brand .logo strong { font-weight: 800; }
+.brand .logo em { color: var(--sky); font-style: normal; }
+.brand p { font-size: 0.85rem; line-height: 1.6; color: var(--gray); }
+
+nav h3, .contact h3 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
+
+nav ul { display: flex; flex-direction: column; gap: 10px; }
+nav a {
+  font-size: 0.85rem;
+  color: var(--gray);
+  transition: color 0.2s;
+}
+nav a:hover { color: var(--sky); }
+
+.contact p { font-size: 0.85rem; margin-bottom: 8px; color: var(--gray); }
+
+.bottom {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  text-align: center;
+  padding: 16px 24px;
+  font-size: 0.78rem;
+  color: var(--gray);
+}
+
+@media (max-width: 900px) {
+  .inner { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 480px) {
+  .inner { grid-template-columns: 1fr; }
+}
